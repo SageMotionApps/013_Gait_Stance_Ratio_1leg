@@ -1,0 +1,46 @@
+{
+  "user_guide_file": "Gait Stance Ratio 1leg App Guide.pdf",
+  "app_name": "Gait Stance Ratio 1leg",
+  "app_description": "Compute the stance-to-stride ratio for 1 leg during walking.",
+  "app_id": "013",
+  "app_version": "0_3",
+  "version_id": "01303",
+  "validated_version_range": ["3.20.1", "4.1.0"],
+  "parameters_setting": [
+    [
+      "Calculation Options",
+      {
+        "source": "strides_for_average",
+        "title": "Strides for Average",
+        "type": "int",
+        "validation": [1, 15],
+        "description": "How many strides will be used to calculate the average stance ratio"
+      },
+      {
+        "source": "inactive_period",
+        "title": "Inactive Period (s)",
+        "type": "float",
+        "validation": [1, 10],
+        "description": "The stance ratio will be set to one when gait phase has no changes exceeding inactive period (s)"
+      }
+    ],
+    [
+      "Save Options",
+      {
+        "source": "save_mode",
+        "title": "Save Mode",
+        "type": "combo",
+        "validation": ["csv", "h5", "xlsx"],
+        "description": "Save file in specified format"
+      }
+    ]
+  ],
+  "user_fields": [
+    { "name": "time", "data_type": "float", "size": 1 },
+    { "name": "Gait_Phase", "data_type": "int", "size": 1 },
+    { "name": "Stance_Ratio", "data_type": "float", "size": 1 }
+  ],
+  "sensors": ["foot"],
+  "feedback": [],
+  "datarate": 100
+}

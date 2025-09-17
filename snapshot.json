@@ -1,0 +1,11 @@
+{
+  "inactive_period": 3,
+  "last_connect_feedback": [],
+  "last_connect_sensors": [
+    "18:04:ED:E7:83:15"
+  ],
+  "local_time": "2025-04-11-09-52-26",
+  "save_mode": "xlsx",
+  "strides_for_average": 5,
+  "trial_name": "trial_1"
+}
