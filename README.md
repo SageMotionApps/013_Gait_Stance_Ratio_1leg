@@ -1,4 +1,4 @@
-# 013_Gait_Stance_Ratio_1leg
+# Gait Stance Ratio One Leg
 Compute the stance-to-stride ratio for one leg during walking.
 
 ## Nodes Required: 1
